@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal|center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculadora" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/edt_num_1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:hint="0"
+            android:layout_marginRight="20dp"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:text="+"
+            android:textColor="#165998"/>
+
+        <EditText
+            android:id="@+id/edt_num_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:hint="0"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_sumar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Calcular" />
+        <Button
+            android:id="@+id/btnNavegar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ir a Calculadora Completa"
+            android:layout_below="@id/btn_sumar"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="400dp"
+            android:src="@drawable/kotlinlogo"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="400dp"
+                    android:src="@drawable/kotlinlogo"/>
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="400dp"
+                    android:src="@drawable/kotlinlogo"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
